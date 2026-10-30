@@ -31,14 +31,6 @@ function AppInner() {
     <div className="app">
       <header>
         <h1>TaskFlow</h1>
-        {stats && (
-          <div className="stats">
-            <span>Total: {stats.total}</span>
-            <span>To Do: {stats.byStatus.todo}</span>
-            <span>In Progress: {stats.byStatus["in-progress"]}</span>
-            <span>Done: {stats.byStatus.done}</span>
-          </div>
-        )}
         <div className="user-info">
           <span>
             {userId} ({role})
