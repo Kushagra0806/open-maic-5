@@ -10,15 +10,6 @@ import { AuthProvider, useAuth } from "./contexts/AuthContext";
     priority: string;
     assignee: string;
   }) => {
-    await fetch("http://localhost:3001/api/tasks", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      },
-      body: JSON.stringify(task),
-    });
-    window.location.reload();
   };
 
   return (
