@@ -7,13 +7,6 @@ import { AuthProvider, useAuth } from "./contexts/AuthContext";
   const handleCreateTask = async (task: {
     title: string;
     description: string;
-    priority: string;
-    assignee: string;
-  }) => {
-  };
-
-  return (
-    <div className="app">
       <header>
         <h1>TaskFlow</h1>
         <div className="user-info">
