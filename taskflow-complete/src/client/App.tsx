@@ -4,12 +4,6 @@ import { TaskForm } from "./components/TaskForm";
 import { useTaskStats } from "./hooks/useTasks";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 
-// ─── Inner app — rendered only after login ───────────────────────────────
-
-function AppInner() {
-  const stats = useTaskStats();
-  const { userId, role, token, logout } = useAuth();
-
   const handleCreateTask = async (task: {
     title: string;
     description: string;
